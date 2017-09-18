@@ -1,0 +1,50 @@
+.contact__wrapper {
+	@include flex(row, wrap, center, fle-start);
+	max-width: 800px;
+	margin: 30px auto;
+
+	.contact__information {
+		width: 100%;
+		border-bottom: 1px solid $charcoal;
+
+		@include tablet {
+			width: 35%;
+			border-bottom: none;
+			border-right: 1px solid $charcoal;
+		}
+	}
+
+	.contact__form {
+		width: 100%;
+		padding-top: 20px;
+
+		@include tablet {
+			width: 65%;
+			padding-top: 0;
+			padding-left: 40px;
+		}
+	}
+
+	.caldera_forms_form {
+	
+		max-width: 800px;
+		margin: 0 auto;
+
+		.btn {
+			background-color: $grey !important;
+			color: $white !important;
+			border: 2px solid $grey !important;
+			padding: 0 20px !important;
+			line-height: 40px !important;
+			height: auto !important;
+			border-radius: 20px !important;
+			transition: all 0.2s;
+
+			&:hover {
+				background-color: transparent !important;
+				color: $grey !important;
+			}
+		}
+	}
+
+}

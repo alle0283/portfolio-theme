@@ -1,0 +1,104 @@
+.about__module-wrapper {
+	
+	.module__about {
+		margin: 60px 0;
+
+		@include tablet {
+			margin: 90px 0;
+		}
+	}
+
+	h2 {
+		text-decoration: underline;
+	}
+
+	span {
+		@include font-size($p-font-sizes);
+	}
+
+	ul {
+		padding-left: 20px;
+
+		@include tablet {
+			padding-left: 40px;
+		}
+
+		li {
+			margin: 10px 0;
+		}
+	}
+
+	max-width: 1000px;
+	margin: 0 auto;
+
+	.module__aboutme {
+		max-width: 800px;
+		margin: 0 auto 50px auto;
+		text-align: center;
+
+		.module__aboutme-heading {
+			h2 {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.module__skills {
+		
+		.module__skill-summary {
+			
+			margin-bottom: 50px;
+
+			.module__skill-summary-item {
+				margin: 15px 0;
+			}
+		}
+
+		.module__skills-wrapper {
+			
+			display: flex;
+			flex-wrap: wrap;
+
+			.module__skill-ctn {
+				width: 100%;
+
+				@include tablet {
+					width: 50%;
+				}
+
+				.module__skill-category-icon {
+					width: 40px;
+					float: left;
+				}
+
+				.module__skill-category-name {
+					margin-top: 10px;
+					padding-left: 50px;
+
+					@include tablet {
+						margin-top: 3px;
+					}
+				}
+
+				.module__skills-item {
+					margin: 5px 0;
+				}
+			}
+
+		}
+	}
+
+	.module__experience, .module__education {
+		
+		.module__experience-position-ctn, .module__education-ctn {
+			
+			margin: 30px 0;
+
+			.module__experience-position, .module__education-degree {
+				display: inline;
+			}
+
+		}
+	}
+
+}

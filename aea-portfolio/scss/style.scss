@@ -1,0 +1,71 @@
+/*!
+ Theme Name:   Amy Allen Portfolio
+ Theme URI:    http://example.com/aea-portfolio/
+ Description:  Amy Allen Portolio Theme
+ Author:       Amy Allen
+ Author URI:   http://amyeallen.com
+ Template:     aea-portfolio
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ Text Domain:  aea-portfolio
+*/
+
+@import 'variables';
+@import 'loader';
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'contact';
+@import 'about';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: $main-font;
+	color: $charcoal;
+}
+
+// hide until page fully loaded
+.page-wrapper {
+    display: none;
+}
+
+.page-content {
+	padding: 30px;
+	background-color: $green;
+
+	@include tablet {
+		padding: 30px 50px;
+	}
+}
+
+p, li, a {
+	@include font-size($p-font-sizes);
+}
+
+h1 {
+	@include font-size($h1-font-sizes);
+}
+
+h2 {
+	@include font-size($h2-font-sizes);
+}
+
+h3 {
+	@include font-size($h3-font-sizes);
+}
+
+h4 {
+	@include font-size($h4-font-sizes);
+}
+
+h5 {
+	@include font-size($h5-font-sizes);
+}
+
+h6 {
+	@include font-size($h6-font-sizes);
+}

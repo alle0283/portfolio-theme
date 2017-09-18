@@ -1,0 +1,24 @@
+.footer {
+	background-color: $charcoal;
+	color: $white;
+	padding: 30px 50px;
+	text-align: center;
+
+	.footer__icons {
+
+		a {
+			color: $white;
+			padding: 5px;
+			margin: 5px;
+			transition: all 0.2s ease;
+
+			@include tablet {
+				margin: 5px 15px;
+			}
+
+			&:hover {
+				color: $green;
+			}
+		}
+	}
+}

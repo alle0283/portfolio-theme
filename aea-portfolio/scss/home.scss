@@ -1,0 +1,120 @@
+.portfolio-wrapper {
+	@include flex(row, wrap, center, flex-start);
+
+	.portfolio_portfolio-card-ctn {
+		margin: 20px 10px;
+		width: 100%;
+			max-width: 375px;
+
+			@include tablet {
+				margin: 20px;
+				width: 375px;
+			}
+
+		.portfolio-card {
+			border-radius: $border-radius-card + 5;
+			text-align: center;
+			border: 3px solid $white;
+			box-shadow: -1px 15px 30px -12px black;
+			overflow: hidden;
+
+			&:hover {
+				// transform: scale(1.05);
+
+				.card-content {
+					// margin-top: -100px;
+				}
+
+				.portfolio-card__image {
+					// transform: scale(1.1);
+					// opacity: .6;
+				}
+			}
+			
+			.portfolio-card__categories a, .portfolio-card__tags a {
+				text-decoration: none;
+				color: $charcoal;
+
+				&:hover {
+					text-decoration: underline;	
+				}
+			}
+			.portfolio-card__image-wrapper {
+				overflow: hidden;
+			}
+			.portfolio-card__image {
+				height: 300px;
+			    background-size: cover;
+			    background-position: center;
+				overflow: hidden;
+				background-color: $grey;
+				border-top-left-radius: $border-radius-card;
+				border-top-right-radius: $border-radius-card;
+				// transition: all 0.3s ease;
+			}
+
+			.card-content {
+				background-color: $white;
+				padding: 10px 20px;
+				transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+
+				.portfolio-card__categories {
+					text-transform: uppercase;
+					font-size: 12px;
+					font-weight: 700;
+				}
+
+				.portfolio-card__name {
+					@include font-size($h4-font-sizes);
+					margin: 0;
+
+					a {
+						text-decoration: none;
+						color: $charcoal;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+
+				.portfolio-card__description {
+					display: none;
+					margin-bottom: 0;  
+				}
+			}
+
+			.portfolio-card__completion {
+				background-color: $charcoal;
+				color: $white;
+				font-weight: 700;
+				border-bottom-left-radius: $border-radius-card;
+				border-bottom-right-radius: $border-radius-card;
+				padding: 20px 15px;
+				text-align: center;
+
+				.portfolio-card__completion--large-text {
+					font-size: 24px;
+				}
+
+				.portfolio-card__completion--small-text {
+					text-transform: uppercase;
+					font-size: 12px;
+				}
+			}
+
+			.hover {
+				.portfolio-card__description {
+					display: block !important;
+					height: auto !important;
+					opacity: 1 !important;
+				}
+
+				.hover .portfolio-card__image img {
+					transform: scale(1.1);
+					opacity: .6;
+				}		
+			}
+		}
+	}
+}
