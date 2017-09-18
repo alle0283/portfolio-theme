@@ -1,4 +1,4 @@
-header {;
+header {
     width: 100%;
     overflow: hidden;
     position: fixed;
@@ -38,6 +38,7 @@ header {;
 
             ul {
                 padding-left: 0;
+                white-space: nowrap;
             }
 
             li {
